@@ -134,7 +134,7 @@ const ShopContextProvider = (props) =>{
             setToken(localStorage.getItem('token'))
             getUserCart(localStorage.getItem('token'))
         }
-    },[])
+    },[token])
 
     const value = {
         products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, cartItems, setCartItems, addToCart, getCartCount, updateQuantity, getCartAmount, navigate, backendUrl, token, setToken
